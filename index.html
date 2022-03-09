@@ -3,56 +3,66 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Debbie Neflas | Portfolio</title>
     </head>
     <body>
         <!--Header-->
         <header>
-            <h1>Debbie Neflas</h1>
+            <h1>
+                <a href="./index.html">Debbie Neflas</a>
+            </h1>
             <!--Navigation Bar-->
             <nav>
                 <ul>
-                    <li><a href="#about-section">About Me</a> </li>
-                    <li><a href="#work-section">Work</a> </li>
-                    <li><a href="#contact-section">Contact</a> </li>
+                    <li>
+                        <a href="#about-section">About</a> 
+                    </li>
+                    <li>
+                        <a href="#work-section">Work</a> 
+                    </li>
+                    <li>
+                        <a href="#contact-section">Contact</a> 
+                    </li>
                 </ul>
             </nav>
         </header>
 
         <!--About Section-->
-        <section class="about-section">
-            <h2 class="section-titles">About</h2>
-            <p>
-                Hi, I'm Debbie - a web developer based in Culver City, CA.
-            </p>
+        <section id="about-section" class="intro">
+            <div class="flex-start">
+                <h2 class="section-titles">About</h2>
+            </div>
+            <div class="flex-center">
+                <p>
+                    Hi, I'm Debbie - a web developer based in Culver City, CA.
+                </p>
+            </div>
         </section>
 
         <!-- Work Section-->
-        <section class="work-section">
-            <h2 class="section-titles">Work</h2>
-            <div class="projects">
-                <article class="project-one">
+        <section id="work-section">
+            <div class="flex-start">
+                <h2 class="section-titles">Work</h2>
+            </div>
+
+            <div class="flex-around">
+                <article class="project-large" href="#">
                     <h3>Project 1</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe corrupti perferendis explicabo vero blanditiis nisi optio unde officia ducimus tempora! Incidunt aliquid earum ratione nostrum in reiciendis neque officiis labore.
-                    </p>
                 </article>
-                <article class="project-two">
+            </div>
+            <div class="flex-center">
+                <article class="project-small" href="#">
                     <h3>Project 2</h3>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore iste voluptate facilis doloribus dolorum rem quae! Id, non voluptate nihil ipsa delectus impedit, vitae repellendus nobis mollitia nostrum recusandae assumenda.
-                    </p>
                 </article>
-                <article class="project-three">
+                <article class="project-small" href="#">
                     <h3>Project 3</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non quia commodi tenetur provident. Porro possimus tempore, omnis sit, iste officia vitae quaerat, quo quas maxime et consectetur odit reiciendis vero!
-                    </p>
                 </article>
             </div>
         </section>
 
         <!--Contact Section -->
-        <section class="contact-section">
+        <section id="contact-section">
             <h2 class="section-titles">Contact</h2>
             <a href="mailto:debbieneflas@gmail.com">debbieneflas@gmail.com</a>
             <br/>
