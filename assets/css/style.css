@@ -11,8 +11,7 @@ body {
 }
 
 header {
-    margin: 0 40px;
-    padding: 20px 0;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -77,7 +76,7 @@ footer {
 
 .section-titles {
     font-size: 60px;
-    margin: 20px 20px -30px;
+    margin: 20px 20px 10px;
     z-index: 998;
 
 }
@@ -87,32 +86,64 @@ footer {
 
 .projects h3 {
     text-align: end;
-    padding: 10px 20px;
+    padding: 25px 20px 10px;
 }
 .project-large {
-    border: 3px solid #fff;
-    width: 100%;
-    background-image: url(../images/image-2.png);
-    height: 400px;
+    padding: 3px;
+    flex: 3 100%;
 }
 
 .project-small {
-    border: 3px solid #fff;
-    width: 50%;
-    background-image: url(../images/image-2.png);
-    height: 300px;
+    padding: 0 3px 2px 3px;
+    flex: 1 50%;
+}
 
+.project-large img {
+
+}
+
+.project-small img {
+
+}
+
+#project-img-1:hover {
+    content: url(../images/image-1-2.jpg);
+}
+
+#project-img-2:hover {
+    content: url(../images/image-2-2.jpg)
+}
+
+#project-img-3:hover {
+    content: url(../images/image-3-2.jpg);
 }
 
 .contact {
     margin: 0 40px;
 }
 
-.flex-around {
+
+.contact-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+    font-size: 20px;
+    align-items: center;
+ }
+
+ .contact-card img {
+     height: 200px;
+     width: auto;
+ }
+ .contact-card a {
+     color: #000;
+     text-decoration: none;
+     padding: 20px 40px;
+ }
+
+ .contact-card a:hover {
+     font-weight:  bold;
+ }
 
 .flex-start {
     display: flex;
