@@ -182,7 +182,7 @@ footer {
  }
 
  .contact-links a {
-    padding: 40px 40px;
+    margin: 40px 40px;
  }
 
  .contact-links a:hover {
@@ -195,18 +195,42 @@ footer {
     justify-content: center;
 }
 
-
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+    .contact h2 {
+        text-align: center;
+    }
 
+    .contact-links {
+        flex: auto;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 768px) {    
+    header nav {
+        flex: 2;
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+    header h1 {
+        font-size: 20px;
+        font-weight: normal;
+        flex: 3;
+    }
+    
+    header nav {
+        flex: 1;
+    }
+   
+    .intro p {
+        font-size: 19px;
+        padding: 40px 0px;
+    }
 
+    .contact-links ul {
+        flex-direction: column;
+    }
 }
