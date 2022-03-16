@@ -4,12 +4,22 @@
     box-sizing: border-box;
 }
 
-body {
-    color: #000000 ;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #ffffff;
+:root {
+    --primary-font-color: #000;
+    --primary-bkg-color: #fff;
 }
 
+body {
+    color: var(--primary-font-color);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--primary-bkg-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-font-color)
+}
+/* Navbar style */
 header {
     padding: 20px 40px;
     display: flex;
@@ -18,23 +28,19 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    background-color: #fff;
+    background-color: var(--primary-bkg-color);
     z-index: 999;
 }
 
 header h1 {
     font-size: 20px;
     font-weight: normal;
-}
-header h1 a:hover {
-    font-weight: bold;
+    flex: 1;
 }
 
-header a {
-    text-decoration: none;
-    color: #000;
+header nav {
+    flex:1;
 }
-
 
 header nav ul {
     display: flex;
@@ -42,20 +48,29 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    text-align: right;
 }
 
-header nav ul li a{
+header nav ul li {
+    flex: 1;
     margin-left: 60px;
 }
 
-header nav ul li a:hover {
+header a:hover {
     font-weight: bold;
 }
 
 footer {
-    margin: 0 40px 100px;
+    margin: 0 40px 40px;
 }
 
+.section-titles {
+    font-size: 50px;
+    margin: 20px 20px 10px;
+
+}
+
+/* About section style */
 .intro {
     background-image: url(../images/image-4.jpg);
     background-size: cover;
@@ -72,14 +87,11 @@ footer {
     font-size: 20px;
     color: #fff;
     font-weight: bold;
+    padding: 200px 50px;
+    text-align: center;
 }
 
-.section-titles {
-    font-size: 60px;
-    margin: 20px 20px 10px;
-    z-index: 998;
-
-}
+/* work section style*/
 .projects {
     margin: 0 40px 40px;
 }
@@ -88,74 +100,94 @@ footer {
     text-align: end;
     padding: 25px 20px 10px;
 }
-.project-large {
+
+.projects a {
+    display: inline;
+    flex: 1;
+}
+
+.project-1 {
     padding: 3px;
-    flex: 3 100%;
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/image-1.jpg);
+    background-position: center;
 }
 
-.project-small {
-    padding: 0 3px 2px 3px;
-    flex: 1 50%;
+.project-1:hover {
+    background-image: url(../images/image-1-2.jpg);
 }
 
-.project-large img {
-
+.project-2 {
+    height: 300px;
+    background-image: url(../images/image-2.jpg);
+    background-position: center;
 }
 
-.project-small img {
-
+.project-2:hover {
+    background-image: url(../images/image-2-2.jpg);
 }
 
-#project-img-1:hover {
-    content: url(../images/image-1-2.jpg);
+.project-3 {
+    height: 300px;
+    background-image: url(../images/image-3.jpg);
+    background-position: center;
 }
 
-#project-img-2:hover {
-    content: url(../images/image-2-2.jpg)
+.project-3:hover {
+    background-image: url(../images/image-3-2.jpg);
 }
 
-#project-img-3:hover {
-    content: url(../images/image-3-2.jpg);
-}
-
+/* contact section style */
 .contact {
     margin: 0 40px;
 }
 
+.contact h2 {
+    text-align: right;
+}
 
-.contact-card {
+.contact-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 20px;
     align-items: center;
  }
+#contact-image {
+    padding: 20px 90px;
+    flex: 1;
+    text-align: center;
+}
 
- .contact-card img {
-     height: 200px;
-     width: auto;
- }
- .contact-card a {
-     color: #000;
-     text-decoration: none;
-     padding: 20px 40px;
+#contact-image img {
+    height: 200px;
+    width: auto;
+}
+
+.contact-links {
+    flex: 4;
+}
+
+ .contact-links ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
  }
 
- .contact-card a:hover {
+ .contact-links ul li {
+     flex: 1;
+ }
+
+ .contact-linksS a {
+    padding: 40px 40px;
+ }
+
+ .contact-links a:hover {
      font-weight:  bold;
  }
-
-.flex-start {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.flex-end {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
 
 .flex-center {
     display: flex;
@@ -163,9 +195,18 @@ footer {
     justify-content: center;
 }
 
-.intro p{
-    padding: 200px;
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: bold;
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
 }
