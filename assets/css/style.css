@@ -110,12 +110,12 @@ footer {
     padding: 3px;
     height: 400px;
     width: 100%;
-    background-image: url(../images/image-1.jpg);
+    background-image: url(../images/image-1-1.png);
     background-position: center;
 }
 
 .project-1:hover {
-    background-image: url(../images/image-1-2.jpg);
+    background-image: url(../images/image-1-2.png);
 }
 
 .project-2 {
