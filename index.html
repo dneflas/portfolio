@@ -1,94 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Debbie Neflas | Portfolio</title>
-    </head>
-    <body>
-        <!--Header-->
-        <header>
-            <h1>
-                <a href="./index.html">Debbie Neflas</a>
-            </h1>
-            <!--Navigation Bar-->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-section">About</a> 
-                    </li>
-                    <li>
-                        <a href="#work-section">Work</a> 
-                    </li>
-                    <li>
-                        <a href="#contact-section">Contact</a> 
-                    </li>
-                </ul>
-            </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Debbie Neflas | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-        <!--About Section-->
-        <section id="about-section" class="intro">
-            <h2 class="section-titles">About</h2>
-            <div >
-                <p>
-                    Hi, I'm Debbie - a web developer based in Culver City, CA.
-                </p>
-            </div>
-        </section>
+  <body>
+    <header>
+      <div class="container flex-row justify-space-between align-center pt-3">
+        <h1 class="page-title py-2 px-3">Debbie Neflas</h1>
+        <nav class="flex-row">
+          <a class="ml-2 my-1 px-2 mx-5 py-1 text-dark" href="#about">About</a>
+          <a class="ml-2 my-1 px-2 mx-5 py-1 text-dark" href="#portfolio"
+            >Work</a
+          >
+          <a class="ml-2 my-1 px-2 mx-5 py-1 text-dark" href="#contact"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main class="container my-5">
+      <section class="my-5" id="about">
+        <!-- <h2 class="text-dark p-2 display-inline-block">About Me</h2> -->
+        <h5 class="text-center my-5 py-5">
+          Hi, I'm Debbie - A full-stack web developer based in Culver City, CA
+        </h5>
+      </section>
 
-        <!-- Work Section-->
-        <section id="work-section" class="projects">
-            <h2 class="section-titles">Work</h2>
-            <a href="https://sammylwolfson.github.io/cat-me/" target="_blank">
-                <div class="project-1">
-                    <h3>CAT ME</h3>
-                </div>
-            </a>
-            <div class="flex-center">
-                <a href="#" target="_blank">
-                    <div class="project-2">
-                        <h3>Project 2</h3>
-                    </div>
-                </a>
-                <a href="#" target="_blank">
-                    <div class="project-3">
-                         <h3>Project 3</h3>
-                    </div>
-                </a>
-            </div>
-        </section>
+      <section class="my-3" id="portfolio">
+        <h2 class="text-dark p-2 display-inline-block">Work</h2>
+        <div class="flex-row justify-space-between">
+          <div
+            class="col-12 mb-2 bg-secondary text-dark p-3 flex-column border-round"
+          >
+            <h3 class="portfolio-item-title text-dark">
+              Artist Nation Press List
+            </h3>
+            <h5 class="portfolio-languages">
+              Built With: Javascript, Node.js, MySQL, Express Package, Sequelize
+              Package, Handlebars, Express Sessions, Connect Session Sequelize,
+              Dotenv package, Bcrypt Package, Casual Package
+            </h5>
+            <p>
+              a full-stack application for Artist Nation to comprise and manage
+              a press list
+            </p>
+            <a
+              href="https://github.com/sammylwolfson/artistnation-presslist"
+              class="btn mt-auto"
+              target="_blank"
+              ><i class="fab fa-github mr-2"></i>View Project on GitHub</a
+            >
+            <a
+              href="https://artistnation-presslist.herokuapp.com/"
+              class="btn mt-auto"
+              target="_blank"
+              >View Deployed Application</a
+            >
+          </div>
 
-        <!--Contact Section -->`
-        <section id="contact-section" class="contact">
-            <h2 class="section-titles">Contact</h2>
-            <div class="contact-info">
-                <div id="contact-image">
-                    <img src="./assets/images/image-5.png" alt="Headshot of self">
-                </div>
-                <div class="contact-links">
-                    <ul>
-                        <li>
-                            <a href="tel:+16263771363">626.377.1363</a>
-                        </li>
-                        <li>
-                            <a href="mailto:debbieneflas@gmail.com">debbieneflas@gmail.com</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/dneflas" target="_blank">GitHub</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/debbieneflas/" target="_blank">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+          <div
+            class="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round"
+          >
+            <h3 class="portfolio-item-title text-dark">CAT ME</h3>
+            <h5 class="portfolio-languages">
+              Built With: HTML, CSS, Javascript, Foundation Framework, Google
+              Icons, Cat Fact API, The Cat API
+            </h5>
+            <p>
+              A front end application that allows users to get and favorite
+              random photos and facts about cats.
+            </p>
+            <a
+              href="https://github.com/sammylwolfson/cat-me"
+              class="btn mt-auto"
+              target="_blank"
+              ><i class="fab fa-github mr-2"></i>View Project on GitHub</a
+            >
+            <a
+              href="https://sammylwolfson.github.io/cat-me/"
+              class="btn mt-0"
+              target="_blank"
+              >View Deployed Application</a
+            >
+          </div>
 
-        <!--Footer-->
-        <footer>
-        </footer>
-    </body>
+          <div
+            class="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round"
+          >
+            <h3 class="portfolio-item-title text-dark">Weather Dashboard</h3>
+            <h5 class="portfolio-languages">
+              Built With: HTML, CSS, Javascript, Bootstrap, OpenWeather One Call
+              API 1.0
+            </h5>
+            <p>
+              An application that allows users to input a city and see the
+              current weather conditions, along with a 5-day forecast.
+            </p>
+            <a
+              href="https://github.com/dneflas/weather-dashboard"
+              class="btn mt-auto"
+              target="_blank"
+              ><i class="fab fa-github mr-2"></i>View Project on GitHub</a
+            >
+            <a
+              href="https://dneflas.github.io/weather-dashboard/"
+              class="btn mt-0"
+              target="_blank"
+              >View Deployed Application</a
+            >
+          </div>
+          <div
+            class="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round"
+          >
+            <h3 class="portfolio-item-title text-dark">Code Quiz</h3>
+            <h5 class="portfolio-languages">
+              Built With: HTML, CSS, Javascript
+            </h5>
+            <p>
+              A timed quiz application that stores high scores, featuring
+              dynamically updated HTML.
+            </p>
+            <a
+              href="https://github.com/dneflas/code-quiz"
+              class="btn mt-auto"
+              target="_blank"
+              ><i class="fab fa-github mr-2"></i>View Project on GitHub</a
+            >
+            <a
+              href="https://dneflas.github.io/code-quiz/"
+              class="btn mt-0"
+              target="_blank"
+              >View Deployed Application</a
+            >
+          </div>
 
+          <div
+            class="col-12 col-md-6 mb-2 bg-secondary text-dark p-3 flex-column border-round"
+          >
+            <h3 class="portfolio-item-title text-dark">The Tech Blog</h3>
+            <h5 class="portfolio-languages">
+              Built With: Node.js, Express, MySQL, Sequelize, Handlebars,
+              Express Sessions, Connect Session Sequelize, Dotenv, Bcrypt,
+              Casual
+            </h5>
+            <p>
+              A full-stack CMS-style blog that allows users to read, write, edit
+              blog posts and leave comments.
+            </p>
+            <a
+              href="https://github.com/dneflas/the-tech-blog"
+              class="btn mt-auto"
+              target="_blank"
+              ><i class="fab fa-github mr-2"></i>View Project on GitHub</a
+            >
+            <a
+              href="https://agile-inlet-69846.herokuapp.com/"
+              class="btn mt-0"
+              target="_blank"
+              >View Deployed Application</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="my-3" id="contact">
+        <h2 class="text-dark p-2 display-inline-block">Contact</h2>
+        <div class="flex-row justify-space-between">
+          <div class="col-md-4 col-lg-2 text-center">
+            <a
+              href="mailto:debbieneflas@gmail.com"
+              class="ml-2 my-1 px-2 py-1 text-dark"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+          <div class="col-md-4 col-lg-2 text-center">
+            <a href="tel:+16263771363" class="ml-2 my-1 px-2 py-1 text-dark"
+              ><i class="fa-solid fa-phone"></i
+            ></a>
+          </div>
+          <div class="col-md-4 col-lg-2 text-center">
+            <a
+              href="https://github.com/dneflas"
+              class="ml-2 my-1 px-2 py-1 text-dark"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div class="col-md-4 col-lg-2 text-center">
+            <a
+              href="https://www.linkedin.com/in/debbieneflas/"
+              class="ml-2 my-1 px-2 py-1 text-dark"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="col-md-4 col-lg-2 text-center">
+            <a href="#" class="ml-2 my-1 px-2 py-1 text-dark" target="_blank"
+              ><i class="fa-solid fa-file"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container py-3"></footer>
+  </body>
 </html>
